@@ -45,6 +45,16 @@ void display(S a[10]) {
     int k=1;
     for(int i=0;i<a[0].column;i++){
         for(int j=1;j<=a[0].value;j++){
+            if(i==a[j].column){
+                b[k].row=a[j].column;
+                b[k].column=a[j].row;
+                b[k].value=a[j].value;
+                k++;
+            }
+            b[0].row=a[0].row;
+            b[0].column=a[0].column;
+            b[0].value=a[0].value;
+
          
         }
     }
@@ -53,11 +63,14 @@ void display(S a[10]) {
 
 
 int main(){
-    S a[10];
+    S a[10],b[10];
     int n,m;
     printf("enter the number rows and column");
     scanf("%d%d",&n,&m);
     accept(a,n,m);
     display(a);
+printf("after tanspose\n");
+transpose(a,b);
+display(b);
     return 0;
 }

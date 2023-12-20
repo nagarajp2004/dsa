@@ -25,7 +25,7 @@ void searchemp_name(E *e,char* name,int n){
       int flag=0;
      for(int i=0;i<n;i++){
       if(strcmp(e[i].name,name)==0){
-        printf("employs is present in our compy ");
+        printf("employs is present in our compy\n ");
         flag=1;
         break;
       }        

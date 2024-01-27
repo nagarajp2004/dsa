@@ -1,6 +1,7 @@
 #include<math.h>
 #include<stdio.h>
 #include<stdlib.h>
+#include<ctype.h>
 #define max 3
 int compute(int op1,char c,int op2){
     switch(c){

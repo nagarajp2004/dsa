@@ -2,6 +2,7 @@
     "files.associations": {
         "PROBLERM.C": "cpp",
         "PPT.C": "cpp",
-        "LAB3.C": "cpp"
+        "LAB3.C": "cpp",
+        "extra_PRG_.C": "cpp"
     }
 }

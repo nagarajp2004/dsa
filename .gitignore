@@ -2,3 +2,4 @@ dynamicinc++.exe
 *.exe
 cccc.cpp
 *.json
+prefix_sum.c

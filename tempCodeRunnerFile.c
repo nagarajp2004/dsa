@@ -1,56 +1,34 @@
-#include<math.h>
-#include<stdio.h>
-#include<stdlib.h>
-#define max 3
-int compute(int op1,char c,int op2){
-    switch(c){
-        case '+':
-        return op1+op2;
-        case '-':
-        return op1-op2;
-        case '*':
-        return op1*op2;
-       case '^':
-       case'$':
-       return (pow(op1,op2));
-       case '%':
-       return op1%op2;
-       default:
-         exit(0);
-    
-    }
-}
-
-void push( int s[max],int *top,int ele ){
-    (*top)++;
-    s[*top]=ele;
-}
-int pop(int s[max],int*top){
-    int ele;
-    ele=s[*top];
-    (*top)--;
-    return ele;
-}
 int main(){
-    char post[100],symbol;
-    int op1,op2,result,top=-1;
-    int s[max];
-    printf("enter  the postfixm \n");
-    scanf("%s",post);
-    for(int i=0;post[i]!='\0';i++){
-        symbol=post[i];
-        if(isdigit(symbol)){
-            push(s,&top,symbol-'0');
-        }
-        else{
-                 op2=pop(s,&top);
-                 op1=pop(s,&top);
-                 result=compute(op1,symbol,op2);
-                 push(s,&top,result);
-        }
-    }
-
- printf("THE ANS =%d",pop(s,&top));
+    int ch,ele;
+    NODE head;
+    head=getnode();
+    head->link=head;
+    while(1){
+    printf("enter the 1  to insert_f \n 2 to insert_r \n 3 to delete_f \n 4 to delete_r\n 5 to display\n");
+    scanf("%d",&ch);
+    switch(ch){
+        case 1:
+        printf("enter the ele\n");
+        scanf("%d",&ele);
+        insert_hsll_front(head,ele);
+         break;
+        case 2:
+        printf("enter the ele\n");
+        scanf("%d",&ele);
+      insert_hsll_r(head,ele);
+        break;
+        case 3:
+        delete_front_hsll(head);
+        break;
+        case 4:
+       delete_rear_hsll(head);
+        break;
+        case 5:
+        display_h_csll(head);
+        break;
+        default:
+        exit(0);
+ }   
+ 
+}  
 }
-
-

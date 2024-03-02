@@ -96,7 +96,7 @@ NODE delete_front(NODE first){
         printf("dll is empty\n");
         return NULL;
     }
-    if(cur->rlink=NULL){
+    if(cur->rlink==NULL){
         printf("deleted employ details is \n");
         printf("ssn is %s \t name is %s \t dept is %s\t desig is %s\t\n sal is %f\t phone number :%ld\n",cur->ssn,cur->name,cur->dept,cur->desig,cur->sal,cur->ph);
         free(cur);
@@ -146,14 +146,19 @@ int main(){
             case 3:
              first=insert_front(first);
              break;
+             
             case 4:
               first=inser_rear(first);
+              break;
              case 5:
               first=delete_front(first);
+              break;
              case 6:
               first=delete_rear(first);
+              break;
             case 7:
              dispaly_dll(first);
+             break;
               default:
               exit(0);           
         }        

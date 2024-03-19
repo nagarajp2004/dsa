@@ -31,7 +31,7 @@ void insert_hsll_r(NODE head,int ele)
     cur=cur->link;
   }
   cur->link=temp;
-  temp->link=head;
+  temp->link=head
 }
 void delete_front_hsll(NODE head)
 {

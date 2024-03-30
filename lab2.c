@@ -27,7 +27,7 @@ FIN[q++] = T[k++];
 FIN[q]='\0';
 }
 int main() {
-char T[40]={"bapqrababbzzba"};
+char T[40]={"bapqrabyabbzzba"};
 char P[20]={"ba"},REP[20]={"BA"}, FIN[50];
 replace(T, P, REP, FIN);
 printf("Output %s\n",FIN);

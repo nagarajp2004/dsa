@@ -27,7 +27,7 @@ NODE insert_front(NODE first,int ele){
 void display(NODE first){
  NODE next=first;
  if(next==NULL){
-    printf("empty sll");
+    printf("the sll is empty  sll");
     return ;
  }
  while(next!='\0'){

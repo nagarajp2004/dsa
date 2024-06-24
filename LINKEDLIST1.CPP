@@ -23,6 +23,17 @@ void display(Node* head){
       head=head->next;
     }
 }
+Node* dele_node(int index,Node* cur){
+  if(index==1){
+    Node* temp=cur->next;
+       delete cur;
+       return temp;
+  }
+  cur->next=dele_node(index-1,cur->next);
+  return cur;
+}
+
+
 
 
  int main()
@@ -30,7 +41,8 @@ void display(Node* head){
 Node* head=nullptr;
 int a[6]={1,2,3,4,5,6};
 head=create_ll(a,0,6);
-display(head);
 
+head=dele_node(3,head);
+display(head);
 }
 

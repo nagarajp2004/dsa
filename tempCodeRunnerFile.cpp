@@ -1,16 +1,9 @@
-#include<iostream>
-using namespace std;
-void ltou(string &s,int n){
-    if(n==-1){
-        return;
-    }
-    s[n]='A'+s[n]-'a';
-    ltou(s,n-1);
-}
-
-int main(){
-  string s={"nagaraj"};
-  int n=s.size();
-  ltou(s,n-1);
-  cout<<s;
-}
+q.push_back(30);
+//   q.push_front(5);
+//   q.display();
+//   cout<<endl;
+//   q.pop_back();
+// q.display();
+//   cout<<endl;
+//   cout<<endl<<q.start()<<endl;
+//   cout<<q.end();

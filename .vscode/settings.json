@@ -4,6 +4,8 @@
         "PPT.C": "cpp",
         "LAB3.C": "cpp",
         "extra_PRG_.C": "cpp",
-        "level_order_traversL.C": "cpp"
-    }
+        "level_order_traversL.C": "cpp",
+        "QUICK_SORT.C": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
 }
